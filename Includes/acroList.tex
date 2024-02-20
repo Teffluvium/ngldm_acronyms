@@ -83,17 +83,26 @@
    long = {Build Verification Test},
    extra = {%
        A build is passed through a set of automated tests to ensure that the build is worthy of System Verification Test.
-
+    
 The concept supporting BVT is a broad validation but of limited depth. Time is of the essence for BVT.
    },
    tag = {Software Component},
+}
+
+\DeclareAcronym{CCTS}{
+   short = CCTS,
+   long = {Customer Care \& Technical Support},
+   extra = {%
+       The department responsible for Customer Care \& Technical Support.
+   },
+   tag = {Department},
 }
 
 \DeclareAcronym{CDV}{
    short = CDV,
    long = {Configuration, Demonstration, and Verification},
    extra = ,
-   tag = {},
+   tag = {-},
 }
 
 \DeclareAcronym{CFR}{
@@ -254,6 +263,19 @@ The concept supporting BVT is a broad validation but of limited depth. Time is o
    tag = {Regulation},
 }
 
+\DeclareAcronym{EA}{
+   short = EA,
+   long = {Early Access},
+   extra = {%
+       Sites and stakeholders' sign-up to get early copies of software for on-site validation.
+
+A process which offers clients the opportunity to preview new features and functionality before a GA release.
+
+Early Access begins in the implementation phase and concludes before the SDLC code-lock milestone.
+   },
+   tag = {-},
+}
+
 \DeclareAcronym{EAN}{
    short = EAN,
    long = {European Article Numbering},
@@ -307,6 +329,15 @@ The concept supporting BVT is a broad validation but of limited depth. Time is o
    long = {Enterprise Resource Planning},
    extra = ,
    tag = {Enterprise Software},
+}
+
+\DeclareAcronym{ES}{
+   short = ES,
+   long = {External Source},
+   extra = {%
+       Is computer software that was not created internally. Open Source is a type of External Source software.
+   },
+   tag = {Software Component},
 }
 
 \DeclareAcronym{ETL}{
@@ -393,11 +424,9 @@ The concept supporting BVT is a broad validation but of limited depth. Time is o
    extra = {%
        Product is available for sale.
 
-
-
 (alt.) A release of software made generally available to the entire customer base.
    },
-   tag = {},
+   tag = {-},
 }
 
 \DeclareAcronym{GAMP}{
@@ -405,27 +434,6 @@ The concept supporting BVT is a broad validation but of limited depth. Time is o
    long = {Good Automated Manufacturing Practices },
    extra = ,
    tag = {Manufacturing Standard},
-}
-
-\DeclareAcronym{GS1}{
-   short = GS1,
-   long = {Global Standards (Barcode)},
-   extra = ,
-   tag = {Standards},
-}
-
-\DeclareAcronym{GTC}{
-   short = GCT,
-   long = {Global Trade Compliance},
-   extra = ,
-   tag = {Standards},
-}
-
-\DeclareAcronym{GTIN}{
-   short = GTIN,
-   long = {Global Trade Item Number},
-   extra = ,
-   tag = {Standards},
 }
 
 \DeclareAcronym{HDMA}{
@@ -440,8 +448,6 @@ The concept supporting BVT is a broad validation but of limited depth. Time is o
    long = {High Level Design},
    extra = {%
        A document that provides a high-level overview of the new and/or enhanced functionality.
-
-
 
 This document details various topics such as: Impact Analysis, Use Cases, Testing strategy, and overview specifics. It serves as a communication mechanism for various stakeholders.
    },
@@ -473,6 +479,13 @@ This document details various topics such as: Impact Analysis, Use Cases, Testin
    tag = {Vision},
 }
 
+\DeclareAcronym{HSM}{
+   short = HSM,
+   long = {Hardware Support Module},
+   extra = ,
+   tag = {-},
+}
+
 \DeclareAcronym{HTTP}{
    short = HTTP,
    long = {HyperText Transfer Protocol},
@@ -498,7 +511,7 @@ This document details various topics such as: Impact Analysis, Use Cases, Testin
    short = IOD,
    long = {Information on Demand},
    extra = ,
-   tag = {},
+   tag = {-},
 }
 
 \DeclareAcronym{IoT}{
@@ -519,7 +532,7 @@ This document details various topics such as: Impact Analysis, Use Cases, Testin
    short = IPS,
    long = {Item Process Stream},
    extra = ,
-   tag = {},
+   tag = {-},
 }
 
 \DeclareAcronym{JIRA}{
@@ -745,8 +758,6 @@ This document details various topics such as: Impact Analysis, Use Cases, Testin
    extra = {%
        A document that details various topics such as: Impact Analysis, Use Cases, Testing strategy, and overview specifics.
 
-
-
 The PDD servers as a communication mechanism for various stakeholders.
    },
    tag = {Project Management},
@@ -761,13 +772,6 @@ The PDD servers as a communication mechanism for various stakeholders.
    tag = {Software Component},
    first-style = long,
    sort = Performance Testing,
-}
-
-\DeclareAcronym{PES}{
-   short = PES,
-   long = {Packaging Execution System},
-   extra = ,
-   tag = {Factory Software},
 }
 
 \DeclareAcronym{PK}{
@@ -791,11 +795,11 @@ The PDD servers as a communication mechanism for various stakeholders.
    tag = {Hardware},
 }
 
-\DeclareAcronym{PPM}{
-   short = PPM,
-   long = {Parts Per Minute},
+\DeclareAcronym{PPC}{
+   short = PPC,
+   long = {Panel PC},
    extra = ,
-   tag = {Metric},
+   tag = {-},
 }
 
 \DeclareAcronym{Product Owner}{
@@ -821,8 +825,6 @@ The PDD servers as a communication mechanism for various stakeholders.
    long = {Quality Assurance},
    extra = {%
        The department responsible for software testing.
-
-
 
 (alt.) Maintenance of a desired level of quality in a service or product, particularly by means of attention to each stage of the process of delivery or production.
    },
@@ -985,40 +987,10 @@ The PDD servers as a communication mechanism for various stakeholders.
    tag = {Department},
 }
 
-\DeclareAcronym{SKU}{
-   short = SKU,
-   long = {Stock Keeping Unit},
-   extra = ,
-   tag = {Standards},
-}
-
-\DeclareAcronym{SLA}{
-   short = SLA,
-   long = {Service Level Agreement},
-   extra = ,
-   tag = {Software Component},
-}
-
 \DeclareAcronym{SLOC}{
    short = SLOC,
    long = {Source Lines of Code},
    extra = ,
-   tag = {-},
-}
-
-\DeclareAcronym{SM2}{
-   short = SM,
-   long = {Setup Manual},
-   extra = ,
-   tag = {-},
-}
-
-\DeclareAcronym{SMS}{
-   short = SMS,
-   long = {Single Model Source},
-   extra = {%
-       Uses an image to form a model source
-   },
    tag = {-},
 }
 
@@ -1045,13 +1017,6 @@ The PDD servers as a communication mechanism for various stakeholders.
    tag = {Software Component},
    first-style = long,
    sort = Spike,
-}
-
-\DeclareAcronym{SPT}{
-   short = SPT,
-   long = {Serialized Product Tracking},
-   extra = ,
-   tag = {},
 }
 
 \DeclareAcronym{SQA}{
@@ -1190,13 +1155,6 @@ The PDD servers as a communication mechanism for various stakeholders.
    tag = {Project Management},
 }
 
-\DeclareAcronym{TIPS}{
-   short = TIPS,
-   long = {T? I? P? S?},
-   extra = ,
-   tag = {-},
-}
-
 \DeclareAcronym{TP}{
    short = TP,
    long = {Test Plan},
@@ -1210,7 +1168,7 @@ The PDD servers as a communication mechanism for various stakeholders.
    short = TPC,
    long = {Thin-Client PC},
    extra = ,
-   tag = {},
+   tag = {-},
 }
 
 \DeclareAcronym{UCC}{
