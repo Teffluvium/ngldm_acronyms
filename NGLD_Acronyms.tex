@@ -1,0 +1,56 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\newcommand{\titleStr}{NGLD Acronyms}
+\newcommand{\procedureNumber}{N/A}
+\newcommand{\departmentOwner}{N/A}
+
+\input{Includes/headmatter}
+\input{Includes/frontmatter}
+%\input{Includes/acronyms}
+\input{Includes/acroList}
+
+\begin{document}
+\input{Includes/titlePage}
+
+\tableofcontents
+%\listoffigures
+%\addcontentsline{toc}{section}{\listfigurename}
+%\listoftables
+%\addcontentsline{toc}{section}{\listtablename}
+
+
+%\section{Objective}
+%
+%\section{Scope}
+%
+%\section{References}
+%
+%\section{Responsibility}
+
+\section{Definitions}
+
+% Add the Definitions table to the List of Tables and display the table
+\addcontentsline{lot}{section}{Definitions}
+\printacronyms[template=descriptionTable]
+
+\end{document}
+
+%\section{Procedure}
+%N\textbackslash A
+%
+%\section{Attachments}
+%N\textbackslash A
+%
+%\section{Revision History}
+%N\textbackslash A
+%
+%\section{Approvals}
+%N\textbackslash A
+
+
+%\nocite{*} % this will print *all* entries
+%
+%\bibliographystyle{siam}  %ieeetr, siam, plain, apalike, alpha, unsrt
+%\bibliography{Includes/ReferenceLib.bib}
+\end{document}

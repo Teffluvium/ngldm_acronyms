@@ -1,0 +1,175 @@
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[10pt,titlepage]{article} % use larger type; default would be 10pt
+\raggedright
+
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{
+	letterpaper,
+	right = 1.0in,
+	left = 1.0in,
+	top = 1.5in,
+	bottom = 0.59in,
+    head=0.7in,
+    includefoot = true,
+}
+
+%%% PACKAGES
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{multicol}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[parfill]{parskip} % Begin paragraphs with an empty line rather than an indent
+
+
+%%% Acronym setup
+\usepackage{acro}
+\acsetup{
+    make-links,
+    format/short    = \textsc,
+    pages / display = first, % first|all|none
+    list / template = descriptionTable, % description|table|longtable|lof|toc
+    list / display  = all, % all|used,
+    list / name     = Definitions,
+    list / sort     = true,
+}
+
+\NewAcroTemplate[list]{descriptionTable}{%
+    \acronymsmapT{%
+        \AcroAddRow{%
+            \bfseries \acrowrite{short}%
+            &
+            \acrowrite{long}%
+            &
+            \acrowrite{extra}%
+            &
+            \acrowrite{tag}%
+            &
+            \acropages
+                {\acrotranslate{page}\nobreakspace}%
+                {\acrotranslate{pages}\nobreakspace}%
+            \tabularnewline
+        }%
+    }%
+    %    \acroheading
+    %    \acropreamble
+    \par\noindent
+    %\setlength\LTright{0pt}%
+    \rowcolors{2}{myMedBlue}{myLightBlue}
+    \begin{longtable}{@{}l L{1.75in} L{2.3in} L{1in} r@{}}
+        \rowcolor{myDarkBlue}
+        {\color{white} \textbf{Abbr.}} &
+        {\color{white} \textbf{Term}} &
+        {\color{white} \textbf{Description}} &
+        {\color{white} \textbf{Category}} &
+        {\color{white} \textbf{Pg.}} \\
+        \endfirsthead
+        %
+        \multicolumn{5}{c}%
+        {{\bfseries Definitions continued from previous page}} \\
+        \rowcolor{myDarkBlue}
+        {\color{white} \textbf{Abbr.}} &
+        {\color{white} \textbf{Term}} &
+        {\color{white} \textbf{Description}} &
+        {\color{white} \textbf{Category}} &
+        {\color{white} \textbf{Pg.}} \\
+        \endhead
+        %
+        \AcronymTable
+    \end{longtable}
+}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\usepackage{lastpage}
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\renewcommand{\footrulewidth}{0.5pt} % customise the layout...
+
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{*3}{*2}
+\titleformat{\section}[hang]
+    {\bfseries{\Large}}
+    {\Large\thesection}{10pt}{\Large\sc}
+
+
+%%% ToC (table of contents) APPEARANCE
+\renewcommand\contentsname{Table of Contents}
+\setcounter{tocdepth}{2}
+
+\usepackage[nottoc,notlof,notlot,numbib]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+
+%% ToC settings for Section
+\renewcommand{\cftsecfont}{\scshape}
+\renewcommand{\cftsecpagefont}{\upshape} % No bold!
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsecdotsep{\cftdot}
+
+%% ToC settings for Subsection
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand{\cftsubsecpagefont}{\upshape} % No bold!
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsubsecdotsep{\cftdot}
+
+%% LoF settings for Figure
+\renewcommand{\cftfigfont}{\scshape Fig. }
+\renewcommand{\cftfigpagefont}{\upshape} % No bold!
+\renewcommand{\cftfigleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftfigdotsep{\cftdot}
+\setlength{\cftfigindent}{0pt}
+
+%% LoT settings for Table
+\renewcommand{\cfttabfont}{\scshape Tab. }
+\renewcommand{\cfttabpagefont}{\upshape} % No bold!
+\renewcommand{\cfttableader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cfttabdotsep{\cftdot}
+\setlength{\cfttabindent}{0pt}
+
+
+%%% Support for tables and colored rows
+\usepackage[hyperref,table,xcdraw,x11names]{xcolor}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Define ragged right/left and centering for fixed width table columns
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+% Spacing between table rows
+\renewcommand{\arraystretch}{1.5}
+
+% Table colors
+\definecolor{myDarkBlue}{HTML}{4F81BD}
+\definecolor{myMedBlue}{HTML}{DEEAF6}
+\definecolor{myLightBlue}{HTML}{F3F6FF}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=Bookmarks,
+    linktocpage=false,
+    hyperindex=true,
+    pdftitle=\titleStr,
+    pdfauthor=\departmentOwner,
+}
+
+\urlstyle{same}
+%%% END Article customizations
