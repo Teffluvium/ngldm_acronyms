@@ -43,7 +43,7 @@ FM,FM,Frequency Modulation,,
 FOUO,FOUO,For Official Use Only,,
 FSDA,FSDA,Fail Safe Design Analysis,,
 FTPS,FTPS,File Transport Secure Protocal,,
-Gbps,Gbps,Giga bits per second,,
+Gbps,Gbps,Gigabits per second,,
 GCM,GCM,Galios Counter Measure,,
 GFS,GFS,Government Furnished Software,,
 GICv4,GICv4,Generic Interrupt Controller version 4,,
@@ -57,174 +57,85 @@ iApp,iApp,Intermdiary Application,,
 IAVA,IAVA,Information Assurance Vulnerability Alert,,
 IASRD,IASRD,Information Assurance Security Requirements Document,,
 IDPDE,IDPDE,iApp OTNK Device PDE Storefront,,
+ILMA,ILMA,iApp Last Mile API,,
+IP,IP,Internet Protocol,,
+JENM,JENM,Joint Enterprise Network Manager,,
+JMPS,JMPS,Joint Mission Planning System,,
+K,K,Thousand,,
+Kbps,Kbps,Kilobits per second,,
+KE,KE,Key Encryption certificate,,
+KLS,KLS,Key Load Status,,
+KMI,KMI,Key Management Infrastucture,,
+KMIDPDE,KMIDPDE,KMI Device PDE Storefront,,
+KRDELIV,KRDELIV,Key Replacement Delivery,,
+LMA,LMA,Last Mile API,,
+LPDDR4,LPDDR4,Low Power Double Data Rate generation 4,,
+MA,MA,Medium Assurance,,
+Mbps,Mbps,Megabits per second,,
+MGC,MGC,Management Client,,
+MGCDPDE,MGCDPDE,KMI MGC Device PDE,,
+MOPP,MOPP,Mission Oriented Protective Posture,,
+MPMSS,MPMSS,Mission Planning Mission Support System,,
+NGLD,NGLD,Next Generation Load Device,,
+NGLD-M,NGLD-M,Next Generation Load Device -- Medium,,
+NIC,NIC,Network Interface Card,,
+NIPRNet,NIPRNet,Non-classified Internet Protocol Router Network,,
+NIPXY,NIPXY,NGLD-M -- iApp Proxy Connection,,
+NLMA,NLMA,NGLD-M Last Mile API,,
+NMDPDE,NMDPDE,NGLDM Device PDE Storefront,,
+NSA,NSA,National Security Agency,,
+OS,OS,Operating System,,
+OSD,OSD,Operational Security Doctrine,,
+OTAD,OTAD,Over-the-Air-Distribution,,
+OTNK,OTNK,Over-the-Network-Keying,,
+PAL,PAL,Product Availability List,,
+PDE,PDE,Product Delivery Enclave,,
+PKCS,PKCS,Public-Key Cryptography Standards,,
+QRG,QRG,Quick Reference Guide,,
+RAM,RAM,Random Access Memory,,
+RAM2,RAM,"Reliability, Availability, Maintainability",,
+RCF,RCF,Radio Configuration Files,,
+RFC,RFC,Request For Comments,,
+RJ45,RJ45,Ethernet,,
+RMF,RMF,Risk Management Framework,,
+RoBAC,RoBAC,Role Based Access Control,,
+RSA,RSA,"Rivest, Shamir, and Adelman",,
+RV,RV,Receive Variable,,
+S2,S2,Software Signature,,
+SHA,SHA,Secure Hash Algorithm,,
+SHS,SHS,Secure Hash Standard,,
+SINCGARS,SINCGARS,Single Channel Ground Air Radio System,,
+SIPRNet,SIPRNet,Secret Internet Protocol Router Network,,
+SKL,SKL,Simple Key Loader,,
+SNMP,SNMP,Simple Network Management Protocol,,
+SOI,SOI,Signal Operating Instruction,,
+SRD,SRD,System Requirement Document,,
+SRG,SRG,Security Requirements Guide,,
+SSO,SSO,System Security Officer,,
+SSP,SSP,Spoof Protection,,
+STE,STE,Secure Telephone Equipment,,
+STIG,STIG,Security Technical Implementation Guide,,
+STU-III,STU-III,"Secure Telephone Unit, Third Generation",,
+SWAP,SWAP,"Size, Weight, and Power",,
+TAMP,TAMP,Trust Anchor Management Protocol,,
+TBD,TBD,To Be Determined,,
+TEMPEST,TEMPEST,Transient Electromagnetic Pulse Emanation Standard,,
+TFTP,TFTP,Trivial File Transfer Protocol,,
+TLS,TLS,Transport Layer Security,,
+TOD,TOD,Time of Day,,
+TSK,TSK,Transmission Security Key,,
+UAG,UAG,User Authentication General,,
+UAS,UAS,User Application Software,,
+UI,UI,User Interface,,
+URI,URI,Uniform Resource Identifiers,,
+US,US,United States,,
+USB,USB,Universsal Serial Bus,,
+UTIL,UTIL,Utility,,
+UX,UX,User eXperience,,
+VESN,VESN,Virtual ESN,,
+VG,VG,Variable Generate,,
+VHF,VHF,Very High Frequency,,
+VU,VU,Varable Update,,
+WOD,WOD,Word of the Day,,
+XML,XML,eXtensible Markup Language,,
 
-
-
-3PL,3PL,3rd Party Logistics,Supply Chain,
-Architecture Review,,Architecture Review,Project Management,A cross-functional gathering to review new or changed architecture.
-BCR,BCR,Barcode Reader,Hardware,
-BI,BI,Business Intelligence,Enterprise Software,
-BOL,BOL,Bill of Lading,Supply Chain,
-BOM,BOM,Bill of Materials,Supply Chain,
-Bug,,Bug,,Any issue found on a GA product.
-BVT,BVT,Build Verification Test,Software Component,"A build is passed through a set of automated tests to ensure that the build is worthy of System Verification Test.
-    
-The concept supporting BVT is a broad validation but of limited depth. Time is of the essence for BVT."
-CCTS,CCTS,Customer Care & Technical Support,Department,The department responsible for Customer Care & Technical Support.
-CDV,CDV,"Configuration, Demonstration, and Verification",,
-CFR,CFR,Code of Federal Regulations,Legal,
-cGMP,cGMP,Current Good Manufacturing Practice,Manufacturing Standard,
-CNT,CNT,Count,,
-Code Lock,,Code Lock,Software Component,Code Lock is the point at which Engineering enters a highly-controlled and monitored state of source code changes.
-COM,COM,Component Object Model,Software Component,Technology created by Microsoft for creating software components.
-CPG,CPG,Consumer Packaged Goods,Market,
-CPV,CPV,Component Placement Verfication,,
-CRM,CRM,Customer Relationship Management,Enterprise Software,
-CRUD,CRUD,"Create, Read, Update, and Delete",Software Component,
-DC,DC,Distribution Center,Supply Chain,
-DCUT,DCUT,Development Complete and Unit Tested,Project Management,"All features coded and unit-tested. If a single feature failed to implemented, DCUT has failed."
-DDS,DDS,Detailed Design Specification,Project Management,
-Defect,,Defect,,Any issue found on a non-GA product.
-Design Document,,Design Document,Project Management,"A product design document (or specification) is a statement of how a design is made, what it is intended to do, and how far it complies with the requirements."
-DLL,DLL,Dynamic Linked Library,Software Component,
-DMT,DMT,Document Management Tool,,
-DoA,DoA,Delegation of Authority,Legal, A formal aggreement that defines the financial and administrative responsibilities and authorities delegated to a person in charge of approving the decisions and transactions within the business entities.
-DPMS,DPMS,Drug Pedigree Messaging Standard,Regulation,
-DRY,DRY,Don't Repeat Yourself,,
-DSCSA,DSCSA,Drug Supply Chain Security Act (USA),Regulation,
-EA,EA,Early Access,,"Sites and stakeholders' sign-up to get early copies of software for on-site validation.
-
-A process which offers clients the opportunity to preview new features and functionality before a GA release.
-
-Early Access begins in the implementation phase and concludes before the SDLC code-lock milestone."
-EAN,EAN,European Article Numbering,Standards,
-EDI,EDI,Electronic Data Interchange,Software Component,
-EPC,EPC,Electronic Product Code,Standards,
-EPCIS,EPCIS,Electronic Product Code InformationService,Standards,
-Epic,,Epic,Software Component,Represents a Feature request to the product
-EPRMLC,EPRMLC,Engineering Product Reference Manual Life Cycle,Project Management,"A process that governs the progression of creating new, and revising existing, Product Reference Manuals."
-ERP,ERP,Enterprise Resource Planning,Enterprise Software,
-ES,ES,External Source,Software Component,Is computer software that was not created internally. Open Source is a type of External Source software.
-ETL,ETL,"Extract, Transform, and Load",,
-FAT,FAT,Factory Acceptance Test,Project Management,
-FMCG,FMCG,Fast Moving Consumer Goods,Market,
-FMD,FMD,Falsified Medicines Directive (EU),Regulation,
-FPC,FPC,Flexible Printed Circuit,Hardware,
-FS / PDD  / HLD,,Functional Specification / Product Design Document  / High Level Design,Project Management,"A formal document produced by SD that outlines in detail, the operating parameters of the software module to be delivered."
-FS1,FS,Fact Sheets,Project Management,
-FS2,FS,Functional Specification,Project Management,
-FTP,FTP,File Transfer Protocol,Software Component,
-Functional Testing,,Functional Testing,Software Component,"In-depth testing of the functionality of the module, to ensure that full-functionality has not been adversely affected by any updates or modifications."
-GA,GA,General Availability,,"Product is available for sale.
-
-(alt.) A release of software made generally available to the entire customer base."
-GAMP,GAMP,Good Automated Manufacturing Practices ,Manufacturing Standard,
-HDMA,HDMA,Health Distribution Management Association,Standards,
-HLD,HLD,High Level Design,Project Management,"A document that provides a high-level overview of the new and/or enhanced functionality.
-
-This document details various topics such as: Impact Analysis, Use Cases, Testing strategy, and overview specifics. It serves as a communication mechanism for various stakeholders."
-HMI,HMI,Human Machine Interface,Hardware Component,
-HP,HP,Hewlett Packard,,A computer hardware and software company
-HR,HR,Human Readable,Vision,Text that can be read by the human eye (as opposed to being encoded in a barcode)
-HSM,HSM,Hardware Support Module,,
-HTTP,HTTP,HyperText Transfer Protocol,Software Component,
-IaaS,IaaS,Infrastructure as a Service,,
-II,II,Initial Instructions,Project Management,
-IOD,IOD,Information on Demand,,
-IoT,IoT,Internet of Things,Software Component,
-IPC,IPC,Industrial PC,Hardware Component,
-IPS,IPS,Item Process Stream,,
-JIRA,,JIRA,Enterprise Software,Issue tracking and resolution system
-KISS,KISS,Keep It Simple Stupid,,
-KYC,KYC,Know Your Customer,,
-LDAP,LDAP,Lightweight Directory Access Protocol ,Software Component,
-LLD,LLD,Low Level Design,Project Management,
-LLOC,LLOC,Logical Lines of Code,Software Component,
-LOC,LOC,Lines of Code,Software Component,
-MAD,MAD,Mark Agnostic Detector,Software Component,
-MAHI,MAHI,Mobile Agnostic Hardware Interface,Software Component,
-MDA,MDA,Mechanical Damage Adaptation,Software Component,
-MDM,MDM,Master Data Management,Software Component,
-MES,MES,Manufacturing Execution System,Factory Software,
-MI,MI,Markem-Imaje,,
-MTH,MTH,Math Tool,,
-MV,MV,Machine Vision,Vision,
-NIRF,NIRF,New Item Request Form,,Used to request a new item add to the financial accounting system (Macola).
-NIST,NIST,National Institute of Standards and Technology,Standards,
-OCR,OCR,Optical Character Recognition,Vision,
-OCV,OCV,Optical Character Verification,Vision,
-OCV2wR,OCV2wR,Optical Charicter Verification with Rotation,Vision,
-OEM,OEM,Original Equipment Manufacturer,Hardware ,
-OM,OM,Operations Manual,Project Management,
-OPC,OPC,Open Platform Communications,Standards,
-OS,OS,Open Source,Software Component,"Is computer software with its source code made available with a license in which the copyright holder provides the rights to study, change, and distribute the software to anyone and for any purpose. Open Source software may be developed in a collaborative public manner."
-OS2,,Operating System,Software Component,
-PaaS,PaaS,Platform as a Service,,
-Patch,,Patch,Software Component,Limited distribution software update intended for a specific customer to meet immediate needs between normally scheduled software releases. Patches typically contain bugs only. Based on project requirements feature changes or enhancements may be added.
-PCA,PCA,Pricipal Component Analysis,,
-PD,PD,Personal Data,,
-PDD,PDD,Product Design Documentation,Project Management,"A document that details various topics such as: Impact Analysis, Use Cases, Testing strategy, and overview specifics.
-
-The PDD servers as a communication mechanism for various stakeholders."
-Performance Testing,,Performance Testing,Software Component,Ensure the Module conforms to performance criteria defined in Functional Specification / Design Documentation
-PK,PK,Primary Key,,
-PLC,PLC,Programmable Logic Controller,Hardware Component,
-PoE,PoE,Power over Ethernet,Hardware,
-PPC,PPC,Panel PC,,
-Product Owner,,Product Owner,,Member of Product Line Management responsible for providing requirements and guidance to on Product releases.
-PWO,PWO,Process/Packaging Work Order,Supply Chain,
-QA,QA,Quality Assurance,Department,"The department responsible for software testing.
-
-(alt.) Maintenance of a desired level of quality in a service or product, particularly by means of attention to each stage of the process of delivery or production."
-QA Test Plan,,QA Test Plan,Project Management,"A formal test procedure that is written from the Functional Specification, Product Design Document, or High Level Design that details the steps taken to test a software module."
-QBR,QBR,Quarterly Business Review,,
-QR code,QR code,Quick Response code,,A QR code is a type of matrix barcode invented in 1994 by the Japanese automotive company Denso Wave.
-RC,RC,Release Candidate,Software Component,"A software release candidate, which has gone through formal QA testing and has been approved by QA for general availability to the public."
-RDD,RDD,Requirements Design Document,Project Management,A document defining the requirements of a proposed product's solution.
-Regression Testing,,Regression Testing,Software Component,Allows the verification of functions of each build. Verifies that modifications have not introduced new problems.
-Repository,,Repository,,Designated network drive/directory used to house automated test scripts and test data.
-RFID,RFID,Radio Frequency Identification,Hardware ,
-RN,RN,Release Notes,,
-ROI,ROI,Region of Interest,Vision,Area of the captured image within which the vision tool performs its analysis.
-SA,SA,Standards & Architecture,Department,The department responsible for developing product solution standards.
-SaaS,SaaS,Software as a Service,,
-SAT,SAT,Site Acceptance Test,Project Management,
-SCADA,SCADA,Supervisory Control and Data Acquisition,Hardware,
-SCM,SCM,Software Configuration Management,,
-SCM2,,Supply Chain Management,Enterprise Software,
-Scrum Master,,Scrum Master,,Individual performing the role of Scrum Master for a product/project team.
-SD,SD,Software Development,Department,Department within Engineering
-SLOC,SLOC,Source Lines of Code,,
-SOP,SOP,Standard Operating Procedures,,
-SP,SP,Stored Procedure,,
-Spike,,Spike,Software Component,"Represent a block of time, up to 54 hours to perform research for a story/feature. Spikes must have subtasks generated to capture the work being completed."
-SQA,SQA,Software Quality Assurance,,A set of activities for ensuring quality in software quality processes
-SQL,SQL,Structured Query Language,Software Component,
-SSCC,SSCC,Serial Shipping Container Code,Standards,
-Story,,Story,Software Component,Represent how a feature will be implemented. A story is confined to work that can be completed within a sprint (54-hour work period) and must be broken into subtasks.
-Sub-Task,,Sub-Task,Software Component,"Represents a breakdown of the work needed to complete a story, task, bug, defect, or Spike e.g. Dev-Task, QA, Product Doc."
-SVM,SVM,Support Vector Machine,,
-Technical Lead,,Technical Lead,,Member of Engineering who is considered the subject matter expert of a specific area.
-Technical Story,,Technical Story,Software Component,Represent any work undertaken as part of an Engineering Initiative with the goal of improving a process within engineering.
-Test Case,,Test Case,Software Component,Individual test step found within a manual or automated QA test procedure
-Test Cycle,,Test Cycle,Software Component,The tasks that are performed during the process of testing the software.
-Test Scripts,,Test Scripts,Software Component,Scripting (code) that is generated from UFT and by testers. The scripts are based upon the Requirements / Design Elements identified in the Test Plan.
-Test Sequence,,Test Sequence,Software Component,Series of sequences (steps) comprising on test scenario.
-Test Steps,,Test Steps,Software Component,The steps required to perform additional manual testing which cannot be easily automated.
-TG,TG,Technical Guide,Project Management,
-TP,TP,Test Plan,Project Management,The documented plan of what and how modules / software will be tested.
-TPC,TPC,Thin-Client PC,,
-UCC,UCC,Uniform Code Council,Standards,
-UDF,UDF,User Defined Function,Software Component,
-UFT,UFT,Unified Functional Testing,,An automated testing tool from HP
-UI,UI,User Interface,Software Component,
-UPC,UPC,Universal Product Code,Standards,
-UPS,UPS,Uninterruptable Power Supply,Hardware,
-URS,URS,User Requirements Specifications,Project Management,
-VAR,VAR,Value Added Reseller,,"A company that adds features or services to an existing product, then resells it (usually to end-users) as an integrated product or complete turn-key solution."
-VQ,VQ,Validation Qualification ,Project Management,
-VUID,VUID,Virtual Unique Identifier,,
-WMS,WMS,Warehouse Management System,Enterprise Software,
-XML,XML,Extensible Markup Language,Software Component,
-XP,XP,Extreme Programming,Software Component,
-YAGNI,YAGNI,You Ain't Gonna Need It,,
