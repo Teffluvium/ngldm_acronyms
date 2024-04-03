@@ -12,11 +12,16 @@
 \usepackage{geometry} % to change the page dimensions
 \geometry{
 	letterpaper,
-	right = 1.0in,
-	left = 1.0in,
-	top = 1.5in,
+	right = 0.75in,
+	left = 0.75in,
+	top = 1.0in,
 	bottom = 0.59in,
     head=0.7in,
+	% right = 1.0in,
+	% left = 1.0in,
+	% top = 1.5in,
+	% bottom = 0.59in,
+    % head=0.7in,
     includefoot = true,
 }
 
@@ -32,13 +37,22 @@
 
 %%% Acronym setup
 \usepackage{acro}
+% \acsetup{
+%     make-links,
+%     format/short    = \textsc,
+%     pages / display = first, % first|all|none
+%     list / template = descriptionTable, % description|table|longtable|lof|toc
+%     list / display  = all, % all|used,
+%     list / name     = Definitions,
+%     list / sort     = true,
+% }
 \acsetup{
     make-links,
     format/short    = \textsc,
-    pages / display = first, % first|all|none
-    list / template = descriptionTable, % description|table|longtable|lof|toc
-    list / display  = all, % all|used,
-    list / name     = Definitions,
+    pages / display = all,
+    list / template = longtable,
+    list / display  = all,
+    list / name     = Acronyms,
     list / sort     = true,
 }
 
@@ -164,7 +178,7 @@
     filecolor=magenta,
     urlcolor=cyan,
     pdftitle={Overleaf Example},
-    pdfpagemode=Bookmarks,
+    pdfpagemode=UseOutlines,
     linktocpage=false,
     hyperindex=true,
     pdftitle=\titleStr,
