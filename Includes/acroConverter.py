@@ -203,7 +203,7 @@ def main():
     input_file = "acroList.csv"
     # read data file with header
     df = read_csv_file_with_header(input_file)
-    df = escape_latex_special_chars(df)
+    # df = escape_latex_special_chars(df)
 
     # Convert pandas dataframe to list of AcroConverter objects
     acro_list = [AcroConverter(**row) for row in df.to_dict("records")]
