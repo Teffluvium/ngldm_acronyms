@@ -1,0 +1,5 @@
+black >= 24.0
+flake8 >= 7.0
+pandas >= 2.2
+pandas-stubs >= 2.2
+pytest >= 8.1

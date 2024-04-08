@@ -21,7 +21,7 @@ def escape_latex_special_chars(df: pd.DataFrame) -> pd.DataFrame:
 
         This function replaces special characters in the dataframe with
         escaped versions.  Currently, the following characters are replaced:
-        \, &, #, %, {, }, _, ~
+        \, &, #, %, {, }, _, ~              # noqa: W605
 
     Args:
         df (pd.DataFrame): [description]
@@ -59,7 +59,16 @@ class AcroData:
     tag: str = ""
 
     def __str__(self):
-        return f"{self.id} {self.short} {self.long} {self.description} {self.tag}"
+        out_str = " ".join(
+            [
+                self.id,
+                self.short,
+                self.long,
+                self.description,
+                self.tag,
+            ]
+        )
+        return out_str
 
 
 # Convert AcroData to acro formatted text
@@ -72,7 +81,7 @@ class AcroConverter(AcroData):
         \DeclareAcronym{<id>}{
             short = <short> or {-},
             long = <long>,
-            extra = {%
+            extra = {%              # noqa: W605
             <description>
             },
             first-style=<long>, # only for short=None
@@ -98,7 +107,13 @@ class AcroConverter(AcroData):
         if pd.isnull(self.description):
             description_str = "   extra = ,\n"
         else:
-            description_str = f"   extra = {{%\n       {self.description}\n   }},\n"
+            description_str = "".join(
+                [
+                    "   extra = {{%\n",
+                    f"       {self.description}\n",
+                    "   }},\n",
+                ]
+            )
         return description_str
 
     def convert_tag(self):
@@ -113,7 +128,7 @@ class AcroConverter(AcroData):
     def convert_to_acro(self):
         """_summary_"""
         # convert_id
-        id_str = f"\DeclareAcronym{{{self.id}}}{{\n"
+        id_str = f"\DeclareAcronym{{{self.id}}}{{\n"  # noqa: W605
         # convert short
         short_str = self.convert_short()
         # convert long
@@ -136,7 +151,7 @@ class AcroConverter(AcroData):
 
         # if isnull(short), add first_style and sort fields
         if pd.isnull(self.short):
-            full_str += f"   first-style = long,\n"
+            full_str += "   first-style = long,\n"
             full_str += f"   sort = {self.long},\n"
 
         # Close bracket
@@ -164,7 +179,12 @@ def test():
     a_convert = AcroConverter("A", "A", "long text", "A nice long description")
     print(a_convert.convert_to_acro())
 
-    b_convert = AcroConverter("B", np.nan, "long text", "A nice long description")
+    b_convert = AcroConverter(
+        "B",
+        np.nan,
+        "long text",
+        "A nice long description",
+    )
     print(b_convert.convert_to_acro())
 
     c_convert = AcroConverter("C", "C", "long text", np.nan)
@@ -178,7 +198,10 @@ def test():
     print(e_convert.convert_to_acro())
 
     a = AcroConverter(
-        id="A", short="A", long="long text", description="A nice long description"
+        id="A",
+        short="A",
+        long="long text",
+        description="A nice long description",
     )
     print(a.convert_to_acro())
 
