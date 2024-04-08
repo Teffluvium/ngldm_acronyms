@@ -1,5 +1,10 @@
-black >= 24.0
-flake8 >= 7.0
 pandas >= 2.2
 pandas-stubs >= 2.2
+
+# Formatting and linting
+black >= 24.0
+flake8 >= 7.0
+isort >= 5.12
+
+# Testing
 pytest >= 8.1
