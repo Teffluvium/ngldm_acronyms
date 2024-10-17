@@ -45,14 +45,10 @@
 \NewAcroTemplate[list]{descriptionTable}{%
     \acronymsmapT{%
         \AcroAddRow{%
-            \bfseries \acrowrite{short}%
-            &
-            \acrowrite{long}%
-            &
-            \acrowrite{extra}%
-            &
-            \acrowrite{tag}%
-            &
+            \bfseries \acrowrite{short} &
+            \acrowrite{long} &
+            \acrowrite{extra} &
+            \acrowrite{tag} &
             \acropages
                 {\acrotranslate{page}\nobreakspace}%
                 {\acrotranslate{pages}\nobreakspace}%
@@ -91,7 +87,10 @@
     \acronymsmapT{%
         \AcroAddRow{%
             \bfseries \acrowrite{short} &
-            \acrowrite{long}
+            \acrowrite{long} &
+            \acropages
+                {\acrotranslate{page}\nobreakspace}%
+                {\acrotranslate{pages}\nobreakspace}%
             \tabularnewline
         }
     }
@@ -99,17 +98,19 @@
 
     % Configure the table and row colors
     \rowcolors{2}{myMedBlue}{myLightBlue}
-    \begin{longtable}{@{}l l r@{}}
+    \begin{longtable}{@{}l L{4in} L{0.5in} r@{}}
         \rowcolor{myDarkBlue}
         {\color{white} \textbf{Abbr.}} &
-        {\color{white} \textbf{Term}} \\
+        {\color{white} \textbf{Term}} &
+        {\color{white} \textbf{Pg.}} \\
         \endfirsthead
         %
         \multicolumn{2}{c}%
         {{\bfseries Acronyms continued from previous page}} \\
         \rowcolor{myDarkBlue}
         {\color{white} \textbf{Abbr.}} &
-        {\color{white} \textbf{Term}} \\
+        {\color{white} \textbf{Term}} &
+        {\color{white} \textbf{Pg.}} \\
         \endhead
         %
         \AcronymTable
